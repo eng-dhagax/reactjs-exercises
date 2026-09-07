@@ -1,0 +1,47 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  background-color: #f7f7fb;
+  transition: background-color 0.2s ease;
+}
+
+.item:hover {
+  background-color: #f0f0f7;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.9rem;
+  accent-color: #7c3aed;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.text {
+  flex: 1;
+  color: #1e1e2f;
+  font-size: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #a0a0b0;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: #e11d48;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.item:hover .deleteButton {
+  opacity: 1;
+}
